@@ -14,5 +14,38 @@
            edit = git commit --amend
 
 
-Answer: 
+Answer:
+For starting with git one first need to open a GitHub account on GitHub .Git and GitHub is not same .Git is a version control system which is integrated with GitHub for publishing code directly to your GitHub .
+After that one has to create a new repository .After creating the repository ,first we need to clone the repository in our local device.But for cloning and adding the file at first we need to add the SSH keys to GitHub.After generating the SSH file from our local pc we need to add the SSH keys to GitHub and GitHub will know the local device.Then we need to clone the repository from GitHub using git clone <url> command into our terminal or gitbash if you are using windows.Then at the project folder we need to open a new file and then if we want to add the file to that repository we need to write some command in the root folder of our project.
+ git add .
+ git commit -m "Your message"
+ git push  
+
+
+A.Answer:The first thing when one has done opening git and setting up everything is need to set the environment variable for the config file.One can see his origin where the source is coming from by simple giving this command in his command tool 
+
+git config --list --show-origin
+
+After that when it shows the origin at your local device try to set the global user name and email as it will show up in the commit history.
+
+git config --global user.name "Your User Name"
+git config --global user.email youremailaddress
+
+
+This two command will set the user name and email for your git.
+
+
+B.Answer: 
+
+Alias is something which could be really necessary in the long run because as our code and commit gets bigger sometime its good to have a preset aliases name on git list .It will shortened the command name on our git version and it will be more time saving 
+
+So as far as our concern we need to shorten some of the common commands of git like branch ,push ,commit etc 
+Here is the command for setting up the git command or alias as short form 
+
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+$ git config --global alias.cp cherry-pick
+
 
