@@ -1,0 +1,18 @@
+ 3.1 Explain what is need to get started with Git. Where is the
+        configuration file? How to use it? Do the following:
+
+        A. How to define in user's configuration file: "name" and "email".
+
+        B. How to add couple of aliases to user's configuration file.
+           Define following aliases:
+
+           b  = branch
+           ci = commit
+           co = checkout
+           cp = cherry-pick
+           st = status --short --branch
+           edit = git commit --amend
+
+
+Answer: 
+
