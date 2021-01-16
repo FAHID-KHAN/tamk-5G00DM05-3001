@@ -1,0 +1,5 @@
+Use at least 2 *.txt file for the exercise.
+This is the first text file 
+Here it contains some text about me and myself 
+Hi ,My name is Fahid and I am a student of Tampere university .
+Kiitos 
