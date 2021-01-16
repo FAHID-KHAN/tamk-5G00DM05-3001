@@ -1,0 +1,49 @@
+3.2  Import a project into Git
+
+        Explain steps to create project and import it into repository
+        as a *one* commit.
+
+        project.git/
+        |
+        +-- doc/
+        |   doc.txt
+        |   test.rtf
+        |
+        +-- web/                Web pages of project
+            | index.html
+            +-- pic/
+                image.jpg
+
+3.2 Answer:
+
+For creating a project into GitHub with git dependency at first we need to create a new repository at GitHub with only the project name .For doing this at first we need Head to main profile in our GitHub and there is a option to create new repository and we need to click that button ,after that there we have to give a name for our project and set it to create .Now when the repository is published at the local directory we need to initialize our project as a git project by writing this command 
+
+$git init 
+
+Then We need to add the files to git index by giving this command 
+
+$git add -A
+
+
+Then we need to add the committed files 
+
+$git commit -m 'Added my project"
+
+After committing the files we need to set the origin from our GitHub by using this command 
+
+$git remote add origin git@github.com:example-name/project.git
+
+It will set the origin of our project into a git project of our repository 
+
+Now when the project is set and and the origin of the project is also there we need to push this project from our local directory into the GitHub directly by using this command 
+
+$git push -u -f origin master
+
+Here -f flag stands for force .This will atomically override everything in the remote repository.
+
+
+This is how we can add our exiting project into GitHub .
+
+
+
+
