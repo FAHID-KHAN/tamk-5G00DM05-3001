@@ -1,0 +1,24 @@
+ 3.4 Git index
+
+        Do the following:
+
+        A. Add file with "git add". Oooops. That was a mistake.
+           Unadd the file (i.e take action out of INDEX).
+
+        B. Remove a file with "git rm".  That was a mistake.
+           Unremove the file (i.e take action out of INDEX and restore file).
+
+
+
+ 3.4 Answer 
+
+ A. At first I am going to add this file into my git and then undo it .
+I write the command 
+$git add 
+
+Then it was a mistake and for undoing this I write 
+$git reset <file name> 
+<file name> here is the file I want to reset the adding for .
+
+
+B.For this exercise I am going to make a sub file name 3.4.1.txt and add some dummy text.After creating the new file at first I am going to add this and push this into my GitHub and then remove it.
