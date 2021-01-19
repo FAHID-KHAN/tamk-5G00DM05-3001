@@ -22,3 +22,9 @@ $git reset <file name>
 
 
 B.For this exercise I am going to make a sub file name 3.4.1.txt and add some dummy text.After creating the new file at first I am going to add this and push this into my GitHub and then remove it.
+So I added the file into my GitHub and then removed it .But it was a mistake so for undoing this I have used the command 
+
+$git checkout 
+And it will set the previous commit as it was and will undo the git rm command.
+
+and it will
