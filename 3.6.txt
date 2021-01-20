@@ -1,0 +1,15 @@
+3.6 Git branches and creating them
+
+        Branch from "devel" to "feature-1", commit to "feature-1" and
+        merge changes back to "devel".
+
+                                       merge
+            master: o -- o             *
+                          \           /
+            devel:         o -- o -- o
+
+
+
+ 3.6 answer 
+
+ At first we have created a new branch from master which is devel and from devel then we created a new branch called feature 1 and now we will push this to branch feature1 
