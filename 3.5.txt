@@ -1,0 +1,36 @@
+3.5 Git branches in general
+
+        A. What command shows the branch you're currently on?
+
+        B. Create a branch from "master" to "devel". Switch to it. Why
+           don't you want to work in master?
+
+
+
+3.5 Answer 
+    
+
+    A.For seeing the current branch one is working on need to type the command 
+    $git branch --show-current 
+
+ Or only this command will show all the branches in the current directory 
+
+   $git branch 
+
+
+
+    B.For creating a new branch from master to level at first we need to pull all the information from current branch as it will updated later on .
+So first 
+  $git pull 
+
+Then we need to use the command for creating a new branch 
+  $git checkout -b "devel"
+
+Now if we want to push something to this newly created branch all we need to do is 
+
+  
+  $git push origin "devel" 
+
+We can use -f in case we want to override everything .
+
+
