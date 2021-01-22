@@ -1,0 +1,64 @@
+4.1 Make a release
+
+        When the code is tested and ready to be published, it is
+        marked with a release tag.
+
+        A. Tag last commit of "master" as "release/1.0.0"
+
+        B. How do you list existing tags?
+
+        C. How do you know the particular tag's commit SHA1?
+
+        D. Take a diff between last release TAG and 2 commits backward.
+
+
+
+ 4.1 For making a release in GitHub or releasing this as tag we need to give some commands but before that we need to make sure that there is another branch with the same committed outcome.
+
+
+   At first we need to make sure that we are on the branch devel and fetch all remote update by giving this command 
+$git remote update 
+
+And we have to update the local develop branch so it is update with remote copy 
+
+
+$git pull origin devel 
+
+
+Now we need to create that release branch that branches off to local devel branch and track origin/devel
+
+$git checkout -b release/0.1.0 origin/devel 
+
+Now we need to push this release branch into remote repository 
+
+$git push origin release/0.1.0
+
+And then it will show as origin release tag in GitHub .
+
+
+ B.How do you list existing tags?
+
+ For the tags listing in my GitHub we have to use this command 
+
+
+$git tag 
+
+C.How do you know the particular tag's commit SHA1?
+
+For getting the particular commit sha1 we need to use this command 
+
+$git show-ref --tags
+
+D.How to Take a diff between last release TAG and 2 commits backward.?
+
+For getting the diff between the last commit and the current commits backward we need to use this command 
+$git diff HEAD^ HEAD 
+
+But we can also see this command will work 
+
+$git show 
+
+And this one also 
+
+$git diff commit_id HEAD 
+
