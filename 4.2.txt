@@ -19,4 +19,33 @@
            Attach the output of the diff.
 
 
+
     At the first commit I have added this file and now I am going to make an another commit .
+=======
+    At the first commit I have added this file and now I am going to make an another commit .
+ Here is the output of the diff 
+git diff HEAD^
+diff --git a/4.2.txt b/4.2.txt
+index 483b650..9b27978 100644
+--- a/4.2.txt
++++ b/4.2.txt
+@@ -17,3 +17,6 @@
+    A. Make two commits. Take a diff
+            between your current work in branch and two commits ago.
+            Attach the output of the diff.
++
++
++    At the first commit I have added this file and now I am going to make an another commit .
+\ No newline at end of file
+
+B. Make a change in a branch.
+           Cherry pick this individual commit to "master".
+
+ Currently I am in main branch but at first I am going to change this to another branch which is master and then I am going to commit something there and pick those commits from there to my main branch .
+
+
+I want to get my previous commit from the file which was the last commit and I used this command 
+$ git cherry-pick 0330c9be9850884fce672e7a6478d0135476a18e
+
+
+

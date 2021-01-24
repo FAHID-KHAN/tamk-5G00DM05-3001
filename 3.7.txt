@@ -1,0 +1,28 @@
+3.7 Git branches and rebase
+
+        Explain what does "rebasing a branch" mean? Demonstrate this in
+        your repository by:
+
+        1. Branch from "devel" to "feature-2". Switch to it. Make 2 commits
+        2. Switch to "devel". Make 2 commits
+        3. Do a rebase for "feature-2"
+
+            [BEFORE REBASE]
+
+            devel: o -- o -- o -- *
+                         \
+            feature-2:    o -- o -- o
+
+            [AFTER REBASE]
+
+            devel: o -- o -- o -- *
+                                   \
+            feature-2:              o -- o -- o
+
+
+
+3.7 Answer 
+
+   Rebasing means  changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base. It's very important to understand that even though the branch looks the same, it's composed of entirely new commits. 
+
+1.Branch from devel to feature 2 making one commit 

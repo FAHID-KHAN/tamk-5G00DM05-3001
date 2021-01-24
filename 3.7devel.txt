@@ -1,0 +1,11 @@
+Now I have switched to devel branch and going to make 2 commits here.
+
+Now I have used the command 
+
+$git rebase feature2 
+
+First, rewinding head to replay your work on top of it...
+Applying: Commited in devel
+
+
+This was the output from the command and it has applied into the feature2 
