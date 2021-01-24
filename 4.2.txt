@@ -17,3 +17,6 @@
    A. Make two commits. Take a diff
            between your current work in branch and two commits ago.
            Attach the output of the diff.
+
+
+    At the first commit I have added this file and now I am going to make an another commit .
