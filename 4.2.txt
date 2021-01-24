@@ -1,0 +1,19 @@
+4.2 Git diff and cherry picking
+
+        Branches are used to isolate work.
+
+        A. Make two commits. Take a diff
+           between your current work in branch and two commits ago.
+           Attach the output of the diff.
+
+        B. Make a change in a branch.
+           Cherry pick this individual commit to "master".
+
+
+ 
+4.2 Answer :
+
+
+   A. Make two commits. Take a diff
+           between your current work in branch and two commits ago.
+           Attach the output of the diff.
