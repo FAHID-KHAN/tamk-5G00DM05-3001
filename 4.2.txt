@@ -20,3 +20,17 @@
 
 
     At the first commit I have added this file and now I am going to make an another commit .
+ Here is the output of the diff 
+git diff HEAD^
+diff --git a/4.2.txt b/4.2.txt
+index 483b650..9b27978 100644
+--- a/4.2.txt
++++ b/4.2.txt
+@@ -17,3 +17,6 @@
+    A. Make two commits. Take a diff
+            between your current work in branch and two commits ago.
+            Attach the output of the diff.
++
++
++    At the first commit I have added this file and now I am going to make an another commit .
+\ No newline at end of file
