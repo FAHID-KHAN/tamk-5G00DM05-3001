@@ -1,3 +1,3 @@
 SELECT *
-FROM employees e
-ORDER BY e.job_name ASC;
+FROM emp e
+ORDER BY e.job  ASC;

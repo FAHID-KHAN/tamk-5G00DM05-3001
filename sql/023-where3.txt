@@ -1,0 +1,6 @@
+Execution finished without errors.
+Result: 10 rows returned in 5ms
+At line 2:
+select ename, sal
+from emp
+where sal not between 1500 and 2850

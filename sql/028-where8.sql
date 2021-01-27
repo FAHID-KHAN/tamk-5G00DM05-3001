@@ -1,4 +1,4 @@
-SELECT empname, salary, commission_pct
-FROM employees
-WHERE commission_pct
+SELECT ename, sal, comm
+FROM emp
+WHERE comm
 IS NOT NULL

@@ -1,0 +1,7 @@
+Execution finished without errors.
+Result: 9 rows returned in 8ms
+At line 1:
+select ename, deptno
+from emp
+where deptno in
+(10,30)

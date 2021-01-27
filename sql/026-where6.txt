@@ -1,0 +1,6 @@
+Execution finished without errors.
+Result: 0 rows returned in 7ms
+At line 1:
+select ename, sal , deptno
+from emp
+where sal>15004 and deptno in (10,30)

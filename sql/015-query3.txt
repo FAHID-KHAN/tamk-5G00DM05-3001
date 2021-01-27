@@ -1,0 +1,6 @@
+Execution finished without errors.
+Result: 14 rows returned in 9ms
+At line 3:
+SELECT *
+FROM emp e
+ORDER BY e.job  ASC;

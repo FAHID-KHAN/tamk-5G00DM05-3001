@@ -1,0 +1,7 @@
+Execution finished without errors.
+Result: 4 rows returned in 10ms
+At line 1:
+SELECT ename, sal, comm
+FROM emp
+WHERE comm
+IS NOT NULL
