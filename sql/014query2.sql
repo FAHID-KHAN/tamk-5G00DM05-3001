@@ -1,2 +1,2 @@
-select ename, first_quarter
-from emp; 
+select empno, ename, 12*sal+nvl(comm,0) annualsal
+from emp

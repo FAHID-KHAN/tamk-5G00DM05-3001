@@ -1,3 +1,3 @@
-select ename, sal2
-from emp3
+select ename, sal
+from emp
 where sal>2850

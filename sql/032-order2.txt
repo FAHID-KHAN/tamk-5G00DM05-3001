@@ -1,0 +1,8 @@
+JAMES	7900	30	1981-12-03
+
+Execution finished without errors.
+Result: 1 rows returned in 13ms
+At line 1:
+SELECT ename, empno,deptno,hiredate
+FROM emp
+WHERE empno IN (7900,7600);
