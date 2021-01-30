@@ -1,4 +1,164 @@
 # tamk-5G00DM05-3001
+3.0 Git exercises - basics
+
+        ** INSTRUCTIONS **
+
+        For every question and topic (A,B,C):
+
+        - Explain what you do briefly
+        - Write out command used
+        - Write out their output (if any)
+        - ADD PROOF of your work, like output of
+          "git log" or "git diff" depending on the
+          exercise to show what you have done.
+
+    3.1 Starting Git
+
+        http://git-scm.org
+
+        Explain what is need to get started with Git. Where is the
+        configuration file? How to use it? Do the following:
+
+        A. How to define in user's configuration file: "name" and "email".
+
+        B. How to add couple of aliases to user's configuration file.
+           Define following aliases:
+
+           b  = branch
+           ci = commit
+           co = checkout
+           cp = cherry-pick
+           st = status --short --branch
+           edit = git commit --amend
+
+    3.2 Import a project into Git
+
+        Explain steps to create project and import it into repository
+        as a *one* commit.
+
+        project.git/
+        |
+        +-- doc/
+        |   doc.txt
+        |   test.rtf
+        |
+        +-- web/                Web pages of project
+            | index.html
+            +-- pic/
+                image.jpg
+
+    3.3 Git and commits
+
+        Use at least 2 *.txt file for the exercise.
+
+        Make 10 commits of following types:
+
+        - Single commit changes. Change one file over and over.
+
+        - Change set. Make a LOGICAL change that requires changing
+          multiple places at many files. Like chnaging "Copyright (C)"
+          statement in every file. Commit this as ONE logical commit.
+
+    3.4 Git index
+
+        Do the following:
+
+        A. Add file with "git add". Oooops. That was a mistake.
+           Unadd the file (i.e take action out of INDEX).
+
+        B. Remove a file with "git rm".  That was a mistake.
+           Unremove the file (i.e take action out of INDEX and restore file).
+
+    3.5 Git branches in general
+
+        A. What command shows the branch you're currently on?
+
+        B. Create a branch from "master" to "devel". Switch to it. Why
+           don't you want to work in master?
+
+    3.6 Git branches and creating them
+
+        Branch from "devel" to "feature-1", commit to "feature-1" and
+        merge changes back to "devel".
+
+                                       merge
+            master: o -- o             *
+                          \           /
+            devel:         o -- o -- o
+
+    3.7 Git branches and rebase
+
+        Explain what does "rebasing a branch" mean? Demonstrate this in
+        your repository by:
+
+        1. Branch from "devel" to "feature-2". Switch to it. Make 2 commits
+        2. Switch to "devel". Make 2 commits
+        3. Do a rebase for "feature-2"
+
+            [BEFORE REBASE]
+
+            devel: o -- o -- o -- *
+                         \
+            feature-2:    o -- o -- o
+
+            [AFTER REBASE]
+
+            devel: o -- o -- o -- *
+                                   \
+            feature-2:              o -- o -- o
+
+4.0 Git exercises - intermediate
+
+        ** INSTRUCTIONS **
+
+        For every question and topic (A,B,C):
+
+        - Explain what you do briefly
+        - Write out command used
+        - Attach command outputs (if any)
+
+    4.1 Make a release
+
+        When the code is tested and ready to be published, it is
+        marked with a release tag.
+
+        A. Tag last commit of "master" as "release/1.0.0"
+
+        B. How do you list existing tags?
+
+        C. How do you know the particular tag's commit SHA1?
+
+        D. Take a diff between last release TAG and 2 commits backward.
+
+    4.2 Git diff and cherry picking
+
+        Branches are used to isolate work.
+
+        A. Make two commits. Take a diff
+           between your current work in branch and two commits ago.
+           Attach the output of the diff.
+
+        B. Make a change in a branch.
+           Cherry pick this individual commit to "master".
+
+    4.3 Git reflog
+
+        A. What is a reflog? How do you list it?
+
+        B. Add file. Commit it. Add another file. commit it.
+           Ooops those were mistakes. Use reflog to find your COMMIT
+           that was before TWO ADDS and reset your repository to this
+           point.
+
+        C. Hmm, on the other hand -- you want to keep those two new
+           ADDED FILES. Use reflog to locate the position and
+           reset your repository to COMMIT that includes the TWO
+           files. Like it was in step A.
+
+        Reflog is a powerful thing. Don't get too exited or you get
+        tangled up!
+
+End of file
 
 Sql question 
 1.0 Basics of retrieving data
@@ -574,3 +734,5 @@ Sql question
         remove original table "members".
 
 End of file
+
+Answers of git is in vc folder and answers of sql query in sql folder 
