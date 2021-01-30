@@ -1,16 +1,10 @@
-EMPNO  ENAME      SAL  New Salary   
------------  ------------ -----  --------------   
- KING      5000        5750    7698  
- BLAKE     2850        3278    7782  
- CLARK     2450        2818    7566  
- JONES     2975        3421    7654  
- MARTIN    1250        1438    7499  
- ALLEN     1600        1840    7844  
- TURNER    1500        1725    7900  
- JAMES      950        1093    7521  
- WARD      1250        1438    7902  
- FORD      3000        3450    7369  
- SMITH      800         920    7788  
- SCOTT     3000        3450    7876  
- ADAMS     1100        1265    7934  
- MILLER    1300        1495    7893
+JAMES	950	1092.5
+WARD	1250	1437.5
+MARTIN	1250	1437.5
+TURNER	1500	1725.0
+ALLEN	1600	1840.0
+
+Execution finished without errors.
+Result: 5 rows returned in 12ms
+At line 1:
+SELECT ename, sal, sal+sal*.15 AS "new salary" FROM emp WHERE mgr = 7698 ORDER BY "new salary" ASC;
