@@ -1,8 +1,9 @@
 
 
 SELECT ename, DATALENGTH(ename) As  "Character"
-ORDER By Character
-FROM emp;
+ORDER By Character,
+FROM
+emp;
 
 
 /*
