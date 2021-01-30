@@ -1,0 +1,27 @@
+
+SELECT empno, ename, round (sal+(sal*.15) )"new salary",
+    round (sal+(sal*.15))- sal "Increase"
+
+
+FROM emp
+ORDER by ename, "new salary" ASC
+
+ /*7876	ADAMS	1265.0	165.0
+7499	ALLEN	1840.0	240.0
+7698	BLAKE	3278.0	428.0
+7782	CLARK	2818.0	368.0
+7902	FORD	3450.0	450.0
+7900	JAMES	1093.0	143.0
+7566	JONES	3421.0	446.0
+7839	KING	5750.0	750.0
+7654	MARTIN	1438.0	188.0
+7934	MILLER	1495.0	195.0
+7788	SCOTT	3450.0	450.0
+7369	SMITH	920.0	120.0
+7844	TURNER	1725.0	225.0
+7521	WARD	1438.0	188.0
+
+
+Execution finished without errors.
+Result: 14 rows returned in 15ms
+At line 1:
